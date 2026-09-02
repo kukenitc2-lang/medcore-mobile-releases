@@ -1,16 +1,15 @@
 {
-  "latestVersion": "1.0.1",
+  "latestVersion": "1.0.2",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 101,
+  "buildNumber": 102,
   "releaseDate": "02/09/2026",
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
   "fileSize": "6.9 MB",
   "checksumSha256": "F28D7179657DA6E18E3A40FEF9FC4C5417F1866C991BB2FD3785DD9954B70F23",
   "releaseNotes": [
-    "Kết nối trực tiếp máy chủ trung tâm http://116.108.116.78:38888",
-    "Phân hệ Bác sĩ: Xem hồ sơ 9 chuyên khoa + Ký số SmartCA (đơn & hàng loạt)",
-    "Phân hệ Bệnh nhân: Đặt lịch quét CCCD 1s + Tra cứu kết quả PDF có con dấu số",
-    "Tự động cập nhật phiên bản OTA có chữ ký băm toàn vẹn SHA-256"
+    "Sửa lỗi kết nối trực tiếp API gửi OTP qua Email (/api/portal/request-otp)",
+    "Xóa bỏ hoàn toàn code giả lập, hiển thị chính xác lỗi kết nối máy chủ",
+    "Tối ưu hóa giao diện xem kết quả và đăng nhập trên iPad / Tablet"
   ],
   "isMandatory": false
 }
