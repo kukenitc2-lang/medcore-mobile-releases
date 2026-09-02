@@ -1,15 +1,15 @@
 {
-  "latestVersion": "1.2.7",
-  "minRequiredVersion": "1.0.0",
-  "buildNumber": 127,
+  "latestVersion": "0.0.0.111",
+  "minRequiredVersion": "0.0.0.1",
+  "buildNumber": 111,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.2.7: Mở khóa chức năng Kiểm Tra Cập Nhật trên mọi môi trường và thiết bị",
-    "Đảm bảo phản hồi và hiển thị popup nâng cấp ngay tức thì",
-    "Tương thích hoàn hảo tiến trình Auto-Update trong ứng dụng"
+    "Bản cập nhật v0.0.0.111: Đổi chuẩn đánh số phiên bản 4 số (0.0.0.111)",
+    "Kích hoạt kiểm tra cập nhật đa môi trường và Auto-Update 1-chạm",
+    "Tương thích mượt mà toàn diện sinh trắc học khuôn mặt và vân tay"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "5186ECE583DDE2E62856EC285D068134595814AB829AE9EF8545B62482C39846",
+  "apkSha256": "8E7B1DE56A594B18F9F2A6509484D0BF09344F7334D3971070565766F1ABD113",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
