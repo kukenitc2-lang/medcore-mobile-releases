@@ -1,15 +1,16 @@
 {
-  "latestVersion": "1.0.3",
+  "latestVersion": "1.0.4",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 103,
+  "buildNumber": 104,
   "releaseDate": "02/09/2026",
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "fileSize": "74.0 MB",
-  "checksumSha256": "682FD291D65D9B24773DD37C53635CB871DF0B0012B4BF3EC858BD430069BE05",
+  "fileSize": "79.6 MB",
+  "checksumSha256": "5189ACCCF58FC7ECAD2694F4FA6724A6CF256239068D528DD6D92FF03B436340",
   "releaseNotes": [
-    "Hỗ trợ xem đầy đủ kết quả KSK và PDF có chữ ký số cho Bệnh nhân qua mã bảo mật OTP Session",
-    "Loại bỏ hoàn toàn 100% dữ liệu mock/sandbox, kết nối trực tiếp cơ sở dữ liệu bệnh viện",
-    "Tối ưu hóa cơ chế Auto-Update tự động phát hiện phiên bản mới từ GitHub Release"
+    "Tích hợp Native In-App Auto-Update 1-chạm: Tải và tự động kích hoạt cài đặt trên Android",
+    "Tự động kiểm tra phiên bản ngay khi mở app (trước khi đăng nhập)",
+    "Khóa cứng cấu hình Server URL, bảo mật bằng mã PIN IT Admin (chạm 5 lần logo bệnh viện)",
+    "Hoàn thiện xem kết quả KSK và PDF có chữ ký số cho Bệnh nhân"
   ],
   "isMandatory": false
 }
