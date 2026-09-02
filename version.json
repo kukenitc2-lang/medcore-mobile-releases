@@ -1,15 +1,10 @@
 {
-  "latestVersion": "1.0.9",
-  "minRequiredVersion": "1.0.0",
-  "buildNumber": 109,
-  "releaseDate": "02/09/2026",
-  "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "fileSize": "80.4 MB",
-  "checksumSha256": "A38F23CD413AE1EC214532A04E1D211412376B804A4D08897A598358A9916AE9",
-  "releaseNotes": [
-    "Xóa bỏ hoàn toàn việc mở link trình duyệt ngoài gây bắt đăng nhập lại",
-    "Tải trực tiếp file PDF Giấy KSK về thiết bị 1 chạm không phụ thuộc token web",
-    "Banner tải nhanh PDF hiển thị trực tiếp bên trong ứng dụng"
-  ],
-  "isMandatory": false
+  "latestVersion": "1.1.0",
+  "minSupportedVersion": "1.0.0",
+  "releaseDate": "2026-09-02",
+  "releaseNotes": "Bản cập nhật v1.1.0: Hiển thị 100% 14 chuyên khoa, 8 xét nghiệm cận lâm sàng và tải PDF in-app trực tiếp siêu tốc",
+  "apkUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
+  "apkSha256": "08764E22009EC9F5E1152F3EA9CBDEFCE1B1A8E6316E257BFD94A5BE0654130F",
+  "apkSizeBytes": 88899969,
+  "forceUpdate": false
 }
