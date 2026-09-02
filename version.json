@@ -1,15 +1,15 @@
 {
-  "latestVersion": "1.0.8",
+  "latestVersion": "1.0.9",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 108,
+  "buildNumber": 109,
   "releaseDate": "02/09/2026",
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "fileSize": "76.0 MB",
-  "checksumSha256": "D7879399A646F574B19169237078608ABDD3F681F872D92CC8FDC7C8DE39066F",
+  "fileSize": "80.4 MB",
+  "checksumSha256": "A38F23CD413AE1EC214532A04E1D211412376B804A4D08897A598358A9916AE9",
   "releaseNotes": [
-    "Tải trực tiếp file PDF Giấy KSK về máy không cần xác thực token trên trình duyệt",
-    "Tự động gắn Header Authorization Bearer cho mọi API request của Bác sĩ",
-    "Hiển thị kết quả khám chi tiết ngay lập tức không bị trắng màn hình"
+    "Xóa bỏ hoàn toàn việc mở link trình duyệt ngoài gây bắt đăng nhập lại",
+    "Tải trực tiếp file PDF Giấy KSK về thiết bị 1 chạm không phụ thuộc token web",
+    "Banner tải nhanh PDF hiển thị trực tiếp bên trong ứng dụng"
   ],
   "isMandatory": false
 }
