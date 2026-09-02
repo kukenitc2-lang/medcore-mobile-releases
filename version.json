@@ -1,14 +1,15 @@
 {
-  "latestVersion": "1.1.5",
+  "latestVersion": "1.1.6",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 115,
+  "buildNumber": 116,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.1.5: Kích hoạt CapacitorHttp Native Network Engine bypass 100% lỗi Failed to fetch / CORS trên Android",
-    "Tối ưu cơ chế fallback kết nối mạng LAN viện và WAN Internet"
+    "Bản cập nhật v1.1.6: Xử lý triệt để chức năng Xem PDF & In Giấy KSK trên Android Native",
+    "Tích hợp Native Android PDF Intent Reader: Mở xem trực tiếp và in không cần plugin bên thứ 3",
+    "Cố định 100% kết nối máy chủ WAN Production"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "17D72ED28BFDF66087B56C1D00DD9C9E158E7A91FD7D3326E8574B7F0DCC2767",
+  "apkSha256": "5E27C17AFFEC0DF4439F37856AC16D2232101DE0745C4C9C77308E15BE646620",
   "fileSize": "5.2 MB",
   "isMandatory": false,
   "forceUpdate": false
