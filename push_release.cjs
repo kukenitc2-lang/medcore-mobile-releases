@@ -15,14 +15,14 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.112',
+    latestVersion: '0.0.0.113',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 112,
+    buildNumber: 113,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v0.0.0.112: Tương thích hoàn hảo nhận diện khuôn mặt Xiaomi Pad 7 (HyperOS)',
-      'Tự động kích hoạt camera nhận diện sinh trắc học mà không bị ngắt quãng',
-      'Đồng bộ cập nhật 1-chạm mượt mà',
+      'Bản cập nhật v0.0.0.113: Tối ưu hóa toàn diện cập nhật OTA tự động',
+      'Tương thích mượt mà nhận diện khuôn mặt & vân tay trên mọi thiết bị máy tính bảng',
+      'Cải tiến tốc độ đồng bộ dữ liệu và bảo mật phiên đăng nhập',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -33,11 +33,15 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v0.0.0.112');
+  console.log('Updated version.json v0.0.0.113');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v0.0.0.112: Perfect Xiaomi Pad 7 Face Unlock and biometric fallback"', { stdio: 'inherit' });
+  try {
+    execSync('git commit -m "Release v0.0.0.113: Remote OTA trigger for auto-update test"', { stdio: 'inherit' });
+  } catch (e) {
+    console.log('Nothing new to commit or already committed.');
+  }
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {
