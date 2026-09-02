@@ -1,18 +1,16 @@
 {
-  "latestVersion": "1.1.7",
+  "latestVersion": "1.1.8",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 117,
+  "buildNumber": 118,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.1.7: Tích hợp PDF.js HTML5 Canvas hiển thị trực tiếp 100% tài liệu In-App",
-    "Tự động tải chi tiết đầy đủ của bệnh nhân đầu tiên khi mở danh sách hồ sơ",
-    "Chuẩn hóa tính toán Tuổi và Giới tính chính xác theo quy chuẩn Bộ Y Tế QĐ 2062",
-    "Bỏ gán hạng GPLX mặc định, hiển thị đúng theo loại hồ sơ thực tế",
-    "Hoàn thiện FaceID Token Persistence đăng nhập 1 chạm"
+    "Bản cập nhật v1.1.8: Tích hợp Android BiometricPrompt Native và cấp quyền USE_BIOMETRIC",
+    "Hỗ trợ đầy đủ hộp thoại xác thực Khuôn mặt / Vân tay chính thức của hệ điều hành Android",
+    "Đăng nhập FaceID 1 chạm chuẩn bảo mật phần cứng"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "524179464FFB36E8AB7397C9031106395AC3C0AECE9272D0B523B7A1DE2CBB79",
-  "fileSize": "5.3 MB",
+  "apkSha256": "53870BF0803B0C9701E1CF88213108946370C01934ECB09A0C429656BA0D7D56",
+  "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
 }
