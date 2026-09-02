@@ -4,12 +4,13 @@
   "buildNumber": 102,
   "releaseDate": "02/09/2026",
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "fileSize": "6.9 MB",
-  "checksumSha256": "F28D7179657DA6E18E3A40FEF9FC4C5417F1866C991BB2FD3785DD9954B70F23",
+  "fileSize": "12.2 MB",
+  "checksumSha256": "3345E6A974C9A566782379E4A6B01C5B2AF2BA17642AC760EF88D7D8B004CBAB",
   "releaseNotes": [
-    "Sửa lỗi kết nối trực tiếp API gửi OTP qua Email (/api/portal/request-otp)",
-    "Xóa bỏ hoàn toàn code giả lập, hiển thị chính xác lỗi kết nối máy chủ",
-    "Tối ưu hóa giao diện xem kết quả và đăng nhập trên iPad / Tablet"
+    "Kết nối trực tiếp 100% vào máy chủ http://116.108.116.78:38888/api",
+    "Sửa triệt để lỗi kết nối gửi OTP cho Bệnh nhân",
+    "Loại bỏ toàn bộ dữ liệu mock/sandbox, chuẩn hóa 100% dữ liệu thực tế",
+    "Hỗ trợ xem kết quả, ký số Bác sĩ và tự động cập nhật phiên bản OTA"
   ],
   "isMandatory": false
 }
