@@ -3,7 +3,7 @@
   "minRequiredVersion": "1.0.0",
   "buildNumber": 102,
   "releaseDate": "02/09/2026",
-  "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
+  "downloadUrl": "http://116.108.116.78:38888/downloads/MedCore_Hospital.apk",
   "fileSize": "63.0 MB",
   "checksumSha256": "2CF9918208BADFB7A36D1A1B13120398896CC873C63D7723E5B09511B115BD38",
   "releaseNotes": [
@@ -12,5 +12,6 @@
     "Loại bỏ toàn bộ dữ liệu mock/sandbox, chuẩn hóa 100% dữ liệu thực tế",
     "Hỗ trợ xem kết quả, ký số Bác sĩ và tự động cập nhật phiên bản OTA"
   ],
-  "isMandatory": false
+  "isMandatory": false,
+  "fallbackDownloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk"
 }
