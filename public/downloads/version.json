@@ -1,10 +1,10 @@
 {
-  "latestVersion": "1.1.0",
+  "latestVersion": "1.1.1",
   "minSupportedVersion": "1.0.0",
   "releaseDate": "2026-09-02",
-  "releaseNotes": "Bản cập nhật v1.1.0: Hiển thị 100% 14 chuyên khoa, 8 xét nghiệm cận lâm sàng và tải PDF in-app trực tiếp siêu tốc",
+  "releaseNotes": "Bản cập nhật v1.1.1: Sửa triệt để lỗi đen màn hình (cập nhật Vite bundle, relative asset path, ErrorBoundary và splash screen sáng)",
   "apkUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "08764E22009EC9F5E1152F3EA9CBDEFCE1B1A8E6316E257BFD94A5BE0654130F",
-  "apkSizeBytes": 88899969,
+  "apkSha256": "C27A2FC9AD6BDA621B3E68D4DCD1DB2884B32D5AB4CC931BEBD5256AF0F371CB",
+  "apkSizeBytes": 93504279,
   "forceUpdate": false
 }

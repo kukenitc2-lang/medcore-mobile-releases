@@ -15,10 +15,10 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.1.0',
+    latestVersion: '1.1.1',
     minSupportedVersion: '1.0.0',
     releaseDate: new Date().toISOString().split('T')[0],
-    releaseNotes: 'Bản cập nhật v1.1.0: Hiển thị 100% 14 chuyên khoa, 8 xét nghiệm cận lâm sàng và tải PDF in-app trực tiếp siêu tốc',
+    releaseNotes: 'Bản cập nhật v1.1.1: Sửa triệt để lỗi đen màn hình (cập nhật Vite bundle, relative asset path, ErrorBoundary và splash screen sáng)',
     apkUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
     apkSizeBytes: sizeBytes,
@@ -27,11 +27,11 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.1.0');
+  console.log('Updated version.json v1.1.1');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.1.0: Complete data extraction for all clinical specialties, paraclinical tests, and direct in-app PDF downloading"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.1.1: Fix black screen issue by rebuilding fresh Vite dist bundle with relative asset path, light theme background and React ErrorBoundary"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {
