@@ -15,14 +15,14 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.113',
+    latestVersion: '0.0.0.114',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 113,
+    buildNumber: 114,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v0.0.0.113: Tối ưu hóa toàn diện cập nhật OTA tự động',
-      'Tương thích mượt mà nhận diện khuôn mặt & vân tay trên mọi thiết bị máy tính bảng',
-      'Cải tiến tốc độ đồng bộ dữ liệu và bảo mật phiên đăng nhập',
+      'Bản cập nhật v0.0.0.114: Vá lỗi bảo mật đăng nhập sinh trắc học',
+      'Khắc phục lỗ hổng cho phép bypass FaceID/Vân tay khi che camera',
+      'Tăng cường bảo mật xác thực đăng nhập sinh trắc học',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,

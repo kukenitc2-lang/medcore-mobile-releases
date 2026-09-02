@@ -1,16 +1,16 @@
 {
-  "latestVersion": "0.0.0.113",
+  "latestVersion": "0.0.0.114",
   "minRequiredVersion": "0.0.0.1",
-  "buildNumber": 113,
+  "buildNumber": 114,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v0.0.0.113: Tối ưu hóa toàn diện cập nhật OTA tự động",
-    "Tương thích mượt mà nhận diện khuôn mặt & vân tay trên mọi thiết bị máy tính bảng",
-    "Cải tiến tốc độ đồng bộ dữ liệu và bảo mật phiên đăng nhập"
+    "Bản cập nhật v0.0.0.114: Vá lỗi bảo mật đăng nhập sinh trắc học",
+    "Khắc phục lỗ hổng cho phép bypass FaceID/Vân tay khi che camera",
+    "Tăng cường bảo mật xác thực đăng nhập sinh trắc học"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "1E5A20208DE0F7AB7D2711B0A05541FE60D61EB7BDD2AF589852985704AF2350",
-  "fileSize": "9.9 MB",
+  "apkSha256": "75CA93353F8507F01F9496CD59A18BB04798B47DB9ED9ED0E26FC9B824D18EBC",
+  "fileSize": "14.4 MB",
   "isMandatory": false,
   "forceUpdate": false
 }
