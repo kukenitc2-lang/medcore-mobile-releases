@@ -1,7 +1,11 @@
 # ==============================================================================
-# MEDCORE RELEASE DISTRIBUTION REPO — IGNORE ALL SOURCE CODE
+# MEDCORE RELEASE DISTRIBUTION REPO — KHÔNG COMMIT ARTIFACT VÀO GIT
 # ==============================================================================
-# Chỉ cho phép lưu trữ file APK phát hành và file metadata phiên bản
+# Kể từ khi chuyển sang GitHub Releases, APK + version.json là ASSETS của Release
+# (xem README.md). Git chỉ track: README, .gitignore, script phát hành.
+#
+# Lịch sử cũ vẫn chứa blob APK (repo ~1.2 GiB). Việc dọn history (git filter-repo)
+# sẽ được thực hiện riêng khi cả team đã đồng bộ — KHÔNG thêm artifact mới vào git.
 
 # Ignore all source code & project configs
 src/
@@ -23,10 +27,12 @@ MedCore_Demo.apk
 .idea/
 .DS_Store
 
-# ONLY ALLOW DISTRIBUTION ARTIFACTS
-!public/
-!public/downloads/
-!public/downloads/MedCore_Hospital.apk
-!public/downloads/version.json
-!README.md
+# Distribution artifacts KHÔNG còn nằm trong git (chỉ trên GitHub Releases)
+public/
+*.apk
+version.json
+
+# Chỉ track tài liệu & script phát hành
 !.gitignore
+!README.md
+!push_release.cjs
