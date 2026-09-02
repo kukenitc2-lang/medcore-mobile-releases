@@ -1,32 +1,32 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+# ==============================================================================
+# MEDCORE RELEASE DISTRIBUTION REPO — IGNORE ALL SOURCE CODE
+# ==============================================================================
+# Chỉ cho phép lưu trữ file APK phát hành và file metadata phiên bản
 
-# Build Outputs
+# Ignore all source code & project configs
+src/
+android/
+ios/
+sql/
+node_modules/
 dist/
 build/
-android/app/build/
-android/.gradle/
-android/build/
-ios/App/build/
-
-# Local Environment & Logs
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE & OS
+package.json
+package-lock.json
+tsconfig.json
+vite.config.ts
+capacitor.config.ts
+index.html
+INTEGRATION_GUIDE.md
+MedCore_Demo.apk
 .vscode/
 .idea/
 .DS_Store
-Thumbs.db
 
-# ALLOW APK and version info in public/downloads
+# ONLY ALLOW DISTRIBUTION ARTIFACTS
+!public/
+!public/downloads/
 !public/downloads/MedCore_Hospital.apk
 !public/downloads/version.json
+!README.md
+!.gitignore
