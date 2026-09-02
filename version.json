@@ -8,7 +8,7 @@
     "Tự động nhận diện loại sinh trắc học của thiết bị (Vân tay / PIN)",
     "Fallback PIN màn hình khóa khi thiết bị không có vân tay/FaceID"
   ],
-  "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
+  "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/releases/latest/download/MedCore_Hospital.apk",
   "apkSha256": "1ED4369592FF5422ADD0C645A6EA4963EB72C0CCB9C9456B2CEE6DF569FA49C2",
   "fileSize": "18.8 MB",
   "isMandatory": false,
