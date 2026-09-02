@@ -15,15 +15,14 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.2.0',
+    latestVersion: '1.2.1',
     minRequiredVersion: '1.0.0',
-    buildNumber: 120,
+    buildNumber: 121,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v1.2.0: Khóa màn hình cập nhật không cho đóng tự do khi có phiên bản mới',
-      'Thêm nút Kiểm Tra Cập Nhật chủ động ngay trên Dashboard và Hồ Sơ',
-      'Tách biệt thông tin cá nhân Bác Sĩ (chuyên khoa, viện) và Bệnh Nhân (CCCD, BHYT, nhóm máu)',
-      'Bỏ hoàn toàn chức năng Đổi mật khẩu và gán SmartCA mặc định',
+      'Bản cập nhật v1.2.1: Chi tiết hóa mã lỗi cảm biến sinh trắc học Android Native',
+      'Hướng dẫn rõ ràng quy trình đăng ký Khuôn mặt/Vân tay trong Cài đặt hệ thống',
+      'Xử lý mượt mà chuyển đổi qua lại giữa Đăng nhập Mật khẩu và FaceID',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -34,11 +33,11 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.2.0');
+  console.log('Updated version.json v1.2.1');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.2.0: Modal update lock, manual check update button, distinct profiles, removed password change"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.2.1: Detailed Android BiometricManager error handling and clear hardware setup guide"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {
