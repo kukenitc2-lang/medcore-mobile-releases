@@ -7,7 +7,7 @@
   "fileSize": "71.7 MB",
   "checksumSha256": "596E0AA7F04201D8F26C4818F834EE0E241B9BCDD007EF55751C97CA448E0864",
   "releaseNotes": [
-    "Ký số chữ ký chính thức Production Keystore (Khắc phục chặn Google Play Protect / Ứng dụng không đáng tin cậy)",
+    "Ký số chữ ký chính thức Production Keystore (Khắc phục cảnh báo Play Protect / Ứng dụng không đáng tin cậy)",
     "Tự động mở nhanh trang Cài đặt Cho phép nguồn không xác định trên Android",
     "Tự động kiểm tra phiên bản ngay trên màn hình đăng nhập (Pre-Login)"
   ],
