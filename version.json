@@ -1,15 +1,15 @@
 {
-  "latestVersion": "1.2.4",
+  "latestVersion": "1.2.5",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 124,
+  "buildNumber": 125,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.2.4: Loại bỏ hoàn toàn mã PIN / Passcode màn hình khóa máy",
-    "Chỉ kích hoạt cảm biến Sinh trắc học phần cứng thuần túy (Khuôn mặt & Vân tay)",
-    "Có nút Hủy rõ ràng để chuyển sang đăng nhập mật khẩu"
+    "Bản cập nhật v1.2.5: Bổ sung Cache Buster chống lưu cache của GitHub CDN",
+    "Đảm bảo chức năng Kiểm Tra Cập Nhật trên Dashboard và Cài Đặt phản hồi tức thì",
+    "Hoàn thiện toàn diện tiến trình nâng cấp và tải cài đặt tự động"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "79EFFC4E4EBFBC49A1EFEF65C12ACEC56B4A81CB9E606AE2ECF05EAF26EE3942",
+  "apkSha256": "0CFC64E18659CEDCC9C605D21E5326128B577C4E38C22ED93D3CFFC0DAA7CDAF",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
