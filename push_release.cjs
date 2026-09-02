@@ -15,23 +15,30 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.1.2',
-    minSupportedVersion: '1.0.0',
+    latestVersion: '1.1.3',
+    minRequiredVersion: '1.0.0',
+    buildNumber: 113,
     releaseDate: new Date().toISOString().split('T')[0],
-    releaseNotes: 'Bản cập nhật v1.1.2: Sửa lỗi TypeError releaseNotes.map khi hiển thị thông báo cập nhật',
-    apkUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
+    releaseNotes: [
+      'Cải thiện toàn diện hệ thống Auto-Update: snooze 24h, delay 3s, validate schema',
+      'Bỏ URL check nội bộ 401, chỉ dùng GitHub CDN ổn định',
+      'Sửa lỗi TypeError releaseNotes.map (chuẩn hóa string|string[] → string[])',
+      'Sửa lỗi màn hình đen (Vite bundle, relative path, ErrorBoundary)',
+    ],
+    downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
-    apkSizeBytes: sizeBytes,
-    forceUpdate: false
+    fileSize: sizeMb + ' MB',
+    isMandatory: false,
+    forceUpdate: false,
   };
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.1.2');
+  console.log('Updated version.json v1.1.3');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.1.2: Fix TypeError releaseNotes.map - normalize string|string[] to array in AppUpdateModal"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.1.3: Robust auto-update system - snooze 24h, schema validation, remove 401 URL, normalize releaseNotes"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {
