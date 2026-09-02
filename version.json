@@ -1,15 +1,15 @@
 {
-  "latestVersion": "1.2.2",
+  "latestVersion": "1.2.3",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 122,
+  "buildNumber": 123,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.2.2: Kích hoạt cảm biến FaceID trực tiếp ngay khi bấm vào icon",
-    "Bỏ chặn token đăng nhập trước, cho phép mở camera nhận diện khuôn mặt tức thì",
-    "Đồng bộ tài khoản mượt mà sau khi quét sinh trắc học thành công"
+    "Bản cập nhật v1.2.3: Khai báo đầy đủ quyền phần cứng android.hardware.biometrics.face và fingerprint",
+    "Hỗ trợ toàn diện nhận diện khuôn mặt 2D/3D và mã khóa bảo mật trên máy tính bảng Android",
+    "Kích hoạt camera quét khuôn mặt mượt mà trong mọi tình huống (Đăng nhập và Cài đặt)"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "4168AAC849A3E295072BA36729E897BE14DEF5442DE8C5F2E3CF785201C27B23",
+  "apkSha256": "725CCDF658A1442E60C3D6B5F7916BB072DE9890C65CD325EA225F8966514D5B",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
