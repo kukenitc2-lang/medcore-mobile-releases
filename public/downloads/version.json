@@ -1,16 +1,14 @@
 {
-  "latestVersion": "1.1.4",
+  "latestVersion": "1.1.5",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 114,
+  "buildNumber": 115,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Đổi tên ứng dụng chính thức thành ViMed",
-    "Cập nhật bộ nhận diện và icon ứng dụng ViMed mới",
-    "Xóa bỏ toàn bộ tên bệnh viện cố định, hỗ trợ linh hoạt đa cơ sở",
-    "Tối ưu hóa và ổn định 100% hệ thống Auto-Update"
+    "Bản cập nhật v1.1.5: Kích hoạt CapacitorHttp Native Network Engine bypass 100% lỗi Failed to fetch / CORS trên Android",
+    "Tối ưu cơ chế fallback kết nối mạng LAN viện và WAN Internet"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "66BAF5D88FBE582BD6AF4BB0655610C97AF1C9B98E49484115CD799582A65A94",
+  "apkSha256": "DA86BE82041902EE5B61930CEB53D26CE1631C7C6FD0F964EA60F62B23F64B79",
   "fileSize": "5.2 MB",
   "isMandatory": false,
   "forceUpdate": false

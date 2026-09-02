@@ -15,15 +15,13 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.1.4',
+    latestVersion: '1.1.5',
     minRequiredVersion: '1.0.0',
-    buildNumber: 114,
+    buildNumber: 115,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Đổi tên ứng dụng chính thức thành ViMed',
-      'Cập nhật bộ nhận diện và icon ứng dụng ViMed mới',
-      'Xóa bỏ toàn bộ tên bệnh viện cố định, hỗ trợ linh hoạt đa cơ sở',
-      'Tối ưu hóa và ổn định 100% hệ thống Auto-Update',
+      'Bản cập nhật v1.1.5: Kích hoạt CapacitorHttp Native Network Engine bypass 100% lỗi Failed to fetch / CORS trên Android',
+      'Tối ưu cơ chế fallback kết nối mạng LAN viện và WAN Internet',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -34,11 +32,11 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.1.4');
+  console.log('Updated version.json v1.1.5');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.1.4: Rename app to ViMed, update brand icon, remove hardcoded hospital names"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.1.5: Enable CapacitorHttp native engine to eliminate Failed to fetch on Android"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {
