@@ -8,7 +8,7 @@
     "Tối ưu cơ chế fallback kết nối mạng LAN viện và WAN Internet"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "DA86BE82041902EE5B61930CEB53D26CE1631C7C6FD0F964EA60F62B23F64B79",
+  "apkSha256": "17D72ED28BFDF66087B56C1D00DD9C9E158E7A91FD7D3326E8574B7F0DCC2767",
   "fileSize": "5.2 MB",
   "isMandatory": false,
   "forceUpdate": false
