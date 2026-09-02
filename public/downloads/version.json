@@ -1,16 +1,15 @@
 {
-  "latestVersion": "1.0.4",
+  "latestVersion": "1.0.5",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 104,
+  "buildNumber": 105,
   "releaseDate": "02/09/2026",
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "fileSize": "79.6 MB",
-  "checksumSha256": "5189ACCCF58FC7ECAD2694F4FA6724A6CF256239068D528DD6D92FF03B436340",
+  "fileSize": "85.1 MB",
+  "checksumSha256": "E9D7057CCB74B767975A03EF58601EBCAC5EC0250C83EEB2BB89DFF46218EE86",
   "releaseNotes": [
-    "Tích hợp Native In-App Auto-Update 1-chạm: Tải và tự động kích hoạt cài đặt trên Android",
-    "Tự động kiểm tra phiên bản ngay khi mở app (trước khi đăng nhập)",
-    "Khóa cứng cấu hình Server URL, bảo mật bằng mã PIN IT Admin (chạm 5 lần logo bệnh viện)",
-    "Hoàn thiện xem kết quả KSK và PDF có chữ ký số cho Bệnh nhân"
+    "Sửa lỗi nạp danh sách hồ sơ Bác sĩ (truyền JWT AccessToken xác thực)",
+    "Hỗ trợ tra cứu tất cả hồ sơ KSK thực tế trên hệ thống",
+    "Tích hợp Auto-Update 1-chạm tải và cài đặt trực tiếp"
   ],
   "isMandatory": false
 }
