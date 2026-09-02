@@ -1,15 +1,15 @@
 {
-  "latestVersion": "0.0.0.111",
+  "latestVersion": "0.0.0.112",
   "minRequiredVersion": "0.0.0.1",
-  "buildNumber": 111,
+  "buildNumber": 112,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v0.0.0.111: Đổi chuẩn đánh số phiên bản 4 số (0.0.0.111)",
-    "Kích hoạt kiểm tra cập nhật đa môi trường và Auto-Update 1-chạm",
-    "Tương thích mượt mà toàn diện sinh trắc học khuôn mặt và vân tay"
+    "Bản cập nhật v0.0.0.112: Tương thích hoàn hảo nhận diện khuôn mặt Xiaomi Pad 7 (HyperOS)",
+    "Tự động kích hoạt camera nhận diện sinh trắc học mà không bị ngắt quãng",
+    "Đồng bộ cập nhật 1-chạm mượt mà"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "8E7B1DE56A594B18F9F2A6509484D0BF09344F7334D3971070565766F1ABD113",
+  "apkSha256": "0F2D82C11DDD27A8E85C8811371605BE151D7938932DA26244CB39248FB59369",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
