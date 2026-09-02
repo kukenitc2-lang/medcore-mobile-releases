@@ -15,14 +15,16 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.1.6',
+    latestVersion: '1.1.7',
     minRequiredVersion: '1.0.0',
-    buildNumber: 116,
+    buildNumber: 117,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v1.1.6: Xử lý triệt để chức năng Xem PDF & In Giấy KSK trên Android Native',
-      'Tích hợp Native Android PDF Intent Reader: Mở xem trực tiếp và in không cần plugin bên thứ 3',
-      'Cố định 100% kết nối máy chủ WAN Production',
+      'Bản cập nhật v1.1.7: Tích hợp PDF.js HTML5 Canvas hiển thị trực tiếp 100% tài liệu In-App',
+      'Tự động tải chi tiết đầy đủ của bệnh nhân đầu tiên khi mở danh sách hồ sơ',
+      'Chuẩn hóa tính toán Tuổi và Giới tính chính xác theo quy chuẩn Bộ Y Tế QĐ 2062',
+      'Bỏ gán hạng GPLX mặc định, hiển thị đúng theo loại hồ sơ thực tế',
+      'Hoàn thiện FaceID Token Persistence đăng nhập 1 chạm',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -33,11 +35,11 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.1.6');
+  console.log('Updated version.json v1.1.7');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.1.6: Fix PDF viewer and in-app printing via Android Native PDF Intent"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.1.7: PDF.js in-app canvas, age/gender fix, auto first-record detail, and bio login"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {

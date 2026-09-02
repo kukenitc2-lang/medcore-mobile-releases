@@ -1,16 +1,18 @@
 {
-  "latestVersion": "1.1.6",
+  "latestVersion": "1.1.7",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 116,
+  "buildNumber": 117,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.1.6: Xử lý triệt để chức năng Xem PDF & In Giấy KSK trên Android Native",
-    "Tích hợp Native Android PDF Intent Reader: Mở xem trực tiếp và in không cần plugin bên thứ 3",
-    "Cố định 100% kết nối máy chủ WAN Production"
+    "Bản cập nhật v1.1.7: Tích hợp PDF.js HTML5 Canvas hiển thị trực tiếp 100% tài liệu In-App",
+    "Tự động tải chi tiết đầy đủ của bệnh nhân đầu tiên khi mở danh sách hồ sơ",
+    "Chuẩn hóa tính toán Tuổi và Giới tính chính xác theo quy chuẩn Bộ Y Tế QĐ 2062",
+    "Bỏ gán hạng GPLX mặc định, hiển thị đúng theo loại hồ sơ thực tế",
+    "Hoàn thiện FaceID Token Persistence đăng nhập 1 chạm"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "5E27C17AFFEC0DF4439F37856AC16D2232101DE0745C4C9C77308E15BE646620",
-  "fileSize": "5.2 MB",
+  "apkSha256": "524179464FFB36E8AB7397C9031106395AC3C0AECE9272D0B523B7A1DE2CBB79",
+  "fileSize": "5.3 MB",
   "isMandatory": false,
   "forceUpdate": false
 }
