@@ -1,17 +1,17 @@
 {
-  "latestVersion": "1.1.3",
+  "latestVersion": "1.1.4",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 113,
+  "buildNumber": 114,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Cải thiện toàn diện hệ thống Auto-Update: snooze 24h, delay 3s, validate schema",
-    "Bỏ URL check nội bộ 401, chỉ dùng GitHub CDN ổn định",
-    "Sửa lỗi TypeError releaseNotes.map (chuẩn hóa string|string[] → string[])",
-    "Sửa lỗi màn hình đen (Vite bundle, relative path, ErrorBoundary)"
+    "Đổi tên ứng dụng chính thức thành ViMed",
+    "Cập nhật bộ nhận diện và icon ứng dụng ViMed mới",
+    "Xóa bỏ toàn bộ tên bệnh viện cố định, hỗ trợ linh hoạt đa cơ sở",
+    "Tối ưu hóa và ổn định 100% hệ thống Auto-Update"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "1567CE5DCEC4F785208919D36BFAF743A675097BD79C7E7E5799B9FCE11C9550",
-  "fileSize": "98.0 MB",
+  "apkSha256": "66BAF5D88FBE582BD6AF4BB0655610C97AF1C9B98E49484115CD799582A65A94",
+  "fileSize": "5.2 MB",
   "isMandatory": false,
   "forceUpdate": false
 }
