@@ -15,14 +15,15 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '1.1.8',
+    latestVersion: '1.1.9',
     minRequiredVersion: '1.0.0',
-    buildNumber: 118,
+    buildNumber: 119,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v1.1.8: Tích hợp Android BiometricPrompt Native và cấp quyền USE_BIOMETRIC',
-      'Hỗ trợ đầy đủ hộp thoại xác thực Khuôn mặt / Vân tay chính thức của hệ điều hành Android',
-      'Đăng nhập FaceID 1 chạm chuẩn bảo mật phần cứng',
+      'Bản cập nhật v1.1.9: Xác thực FaceID phần cứng chuẩn không hỏi mã PIN máy',
+      'Yêu cầu kích hoạt và xác thực khuôn mặt lần đầu trong Cài Đặt bảo mật',
+      'Đổi bộ icon sang phong cách Y tế Chuyên nghiệp (Clean Flat Medical Vector)',
+      'Hoàn thiện luồng Bệnh nhân nạp 100% dữ liệu thực tế từ CSDL',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -33,11 +34,11 @@ if (fs.existsSync(apkSrc)) {
 
   fs.writeFileSync('f:/CORE_MEDICAL_MB/public/downloads/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
   fs.writeFileSync('f:/CORE_MEDICAL_MB/version.json', JSON.stringify(versionObj, null, 2), 'utf8');
-  console.log('Updated version.json v1.1.8');
+  console.log('Updated version.json v1.1.9');
 
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
-  execSync('git commit -m "Release v1.1.8: Android BiometricPrompt Native FaceID with official hardware permissions"', { stdio: 'inherit' });
+  execSync('git commit -m "Release v1.1.9: Strict biometric prompt, settings enrollment requirement, and flat clean medical icons"', { stdio: 'inherit' });
   execSync('git push origin main', { stdio: 'inherit' });
   console.log('SUCCESS: Pushed to GitHub!');
 } else {

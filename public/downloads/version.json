@@ -1,15 +1,16 @@
 {
-  "latestVersion": "1.1.8",
+  "latestVersion": "1.1.9",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 118,
+  "buildNumber": 119,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.1.8: Tích hợp Android BiometricPrompt Native và cấp quyền USE_BIOMETRIC",
-    "Hỗ trợ đầy đủ hộp thoại xác thực Khuôn mặt / Vân tay chính thức của hệ điều hành Android",
-    "Đăng nhập FaceID 1 chạm chuẩn bảo mật phần cứng"
+    "Bản cập nhật v1.1.9: Xác thực FaceID phần cứng chuẩn không hỏi mã PIN máy",
+    "Yêu cầu kích hoạt và xác thực khuôn mặt lần đầu trong Cài Đặt bảo mật",
+    "Đổi bộ icon sang phong cách Y tế Chuyên nghiệp (Clean Flat Medical Vector)",
+    "Hoàn thiện luồng Bệnh nhân nạp 100% dữ liệu thực tế từ CSDL"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "53870BF0803B0C9701E1CF88213108946370C01934ECB09A0C429656BA0D7D56",
+  "apkSha256": "BF1C8BA6DF62BFFFFC2BAC1532C8404A06ECA35191DAF6021EDCE94E968DA673",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
