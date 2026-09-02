@@ -1,15 +1,15 @@
 {
-  "latestVersion": "1.2.5",
+  "latestVersion": "1.2.6",
   "minRequiredVersion": "1.0.0",
-  "buildNumber": 125,
+  "buildNumber": 126,
   "releaseDate": "2026-09-02",
   "releaseNotes": [
-    "Bản cập nhật v1.2.5: Bổ sung Cache Buster chống lưu cache của GitHub CDN",
-    "Đảm bảo chức năng Kiểm Tra Cập Nhật trên Dashboard và Cài Đặt phản hồi tức thì",
-    "Hoàn thiện toàn diện tiến trình nâng cấp và tải cài đặt tự động"
+    "Bản cập nhật v1.2.6: Bật thẳng cảm biến sinh trắc học phần cứng BiometricPrompt của máy tính bảng",
+    "Bỏ hoàn toàn lệnh chặn kiểm tra canAuthenticate trên các dòng máy Android tùy biến",
+    "Tương thích mượt mà toàn diện nhận diện khuôn mặt và vân tay"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "0CFC64E18659CEDCC9C605D21E5326128B577C4E38C22ED93D3CFFC0DAA7CDAF",
+  "apkSha256": "69EFAC6FE4A3AF3128999D01E95ACE96B1ACABEAC5DA1442FE0DECC9270373A9",
   "fileSize": "5.5 MB",
   "isMandatory": false,
   "forceUpdate": false
