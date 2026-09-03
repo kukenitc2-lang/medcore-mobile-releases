@@ -15,15 +15,15 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.117',
+    latestVersion: '0.0.0.118',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 117,
+    buildNumber: 118,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      '[SECURITY] Bản cập nhật v0.0.0.117: Vá lỗ hổng đăng nhập sinh trắc học',
-      'Đăng nhập FaceID/Vân tay giờ BẮT BUỘC máy chủ xác nhận phiên (refresh token hoặc cookie phiên)',
-      'Không còn trường hợp quét sinh trắc học bừa vẫn vào được app với người dùng sai',
-      'Lỗi xác thực hiển thị rõ ràng và chuyển về đăng nhập mật khẩu khi phiên hết hạn',
+      '[UI] Bản cập nhật v0.0.0.118: Tinh chỉnh giao diện màn hình chính',
+      'Bỏ header "Ca trực hôm nay" trên thẻ tổng quan của bác sĩ',
+      'Thẻ tổng quan chuyển nền trắng, chữ màu tối dễ đọc hơn',
+      'Bỏ hiển thị chuỗi chứng thư VNPT giả lập trong app',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -39,7 +39,7 @@ if (fs.existsSync(apkSrc)) {
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
   try {
-    execSync(`git commit -m "Release v${versionObj.latestVersion}: Security fix biometric login (fail-closed server verification)" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"`, { stdio: 'inherit' });
+    execSync(`git commit -m "Release v${versionObj.latestVersion}: UI cleanup - remove shift header, white summary card, remove fake VNPT strings" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"`, { stdio: 'inherit' });
   } catch (e) {
     console.log('Nothing new to commit or already committed.');
   }
