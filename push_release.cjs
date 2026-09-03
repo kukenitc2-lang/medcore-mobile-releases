@@ -15,16 +15,15 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.119',
+    latestVersion: '0.0.0.120',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 119,
+    buildNumber: 120,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      '[SmartCA] Bản cập nhật v0.0.0.119: Ký số từ xa SmartCA theo đúng chuẩn server',
-      'Flow ký: sign-data → remote-sign (server điều phối SmartCA) → sign-conclusion',
-      'Fail-closed: không còn giả lập kết quả ký khi có lỗi',
-      'Ký hàng loạt đúng contract bulk-signatures của máy chủ',
-      'Yêu cầu backend hỗ trợ /signing/remote-sign và bác sĩ đăng ký chứng thư cá nhân',
+      '[SmartCA] Bản cập nhật v0.0.0.120: Tương thích endpoint /signing/remote-sign mới trên server',
+      'Thời gian chờ ký từ xa tăng lên 5.5 phút (khớp VNPT SmartCA polling tối đa 5 phút)',
+      'Bác sĩ ký: chọn hồ sơ → xác thực → mở app SmartCA xác nhận giao dịch',
+      'Yêu cầu backend đã deploy /signing/remote-sign và tài khoản có cấu hình chữ ký số SmartCA',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
