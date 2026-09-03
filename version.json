@@ -1,17 +1,17 @@
 {
-  "latestVersion": "0.0.0.116",
+  "latestVersion": "0.0.0.117",
   "minRequiredVersion": "0.0.0.1",
-  "buildNumber": 116,
+  "buildNumber": 117,
   "releaseDate": "2026-09-03",
   "releaseNotes": [
-    "Bản cập nhật v0.0.0.116: Sửa lỗi đăng nhập và tải dữ liệu",
-    "Sửa lỗi \"Unexpected end of JSON input\" khi máy chủ trả về phản hồi rỗng",
-    "Sửa lỗi 401 sau đăng nhập trên web (cookie same-origin qua proxy)",
-    "Nâng cấp giao diện đăng nhập Bác sĩ / Bệnh nhân"
+    "[SECURITY] Bản cập nhật v0.0.0.117: Vá lỗ hổng đăng nhập sinh trắc học",
+    "Đăng nhập FaceID/Vân tay giờ BẮT BUỘC máy chủ xác nhận phiên (refresh token hoặc cookie phiên)",
+    "Không còn trường hợp quét sinh trắc học bừa vẫn vào được app với người dùng sai",
+    "Lỗi xác thực hiển thị rõ ràng và chuyển về đăng nhập mật khẩu khi phiên hết hạn"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "5FF39DAE88A41EE7D43512BB9CDEA71AD36E999E9709FD785E4EECF92AA98163",
-  "fileSize": "23.3 MB",
+  "apkSha256": "F1CF9328477CF6A8BACA42C17B6629C5AAEACC11DE83F34DE194B7654671CB2A",
+  "fileSize": "27.7 MB",
   "isMandatory": false,
   "forceUpdate": false
 }
