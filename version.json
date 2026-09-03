@@ -1,16 +1,17 @@
 {
-  "latestVersion": "0.0.0.115",
+  "latestVersion": "0.0.0.116",
   "minRequiredVersion": "0.0.0.1",
-  "buildNumber": 115,
-  "releaseDate": "2026-09-02",
+  "buildNumber": 116,
+  "releaseDate": "2026-09-03",
   "releaseNotes": [
-    "Bản cập nhật v0.0.0.115: Hỗ trợ sinh trắc học thông minh cho máy tính bảng",
-    "Tự động nhận diện loại sinh trắc học của thiết bị (Vân tay / PIN)",
-    "Fallback PIN màn hình khóa khi thiết bị không có vân tay/FaceID"
+    "Bản cập nhật v0.0.0.116: Sửa lỗi đăng nhập và tải dữ liệu",
+    "Sửa lỗi \"Unexpected end of JSON input\" khi máy chủ trả về phản hồi rỗng",
+    "Sửa lỗi 401 sau đăng nhập trên web (cookie same-origin qua proxy)",
+    "Nâng cấp giao diện đăng nhập Bác sĩ / Bệnh nhân"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "1ED4369592FF5422ADD0C645A6EA4963EB72C0CCB9C9456B2CEE6DF569FA49C2",
-  "fileSize": "18.8 MB",
+  "apkSha256": "5FF39DAE88A41EE7D43512BB9CDEA71AD36E999E9709FD785E4EECF92AA98163",
+  "fileSize": "23.3 MB",
   "isMandatory": false,
   "forceUpdate": false
 }

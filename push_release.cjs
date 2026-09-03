@@ -15,14 +15,15 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.115',
+    latestVersion: '0.0.0.116',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 115,
+    buildNumber: 116,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      'Bản cập nhật v0.0.0.115: Hỗ trợ sinh trắc học thông minh cho máy tính bảng',
-      'Tự động nhận diện loại sinh trắc học của thiết bị (Vân tay / PIN)',
-      'Fallback PIN màn hình khóa khi thiết bị không có vân tay/FaceID',
+      'Bản cập nhật v0.0.0.116: Sửa lỗi đăng nhập và tải dữ liệu',
+      'Sửa lỗi "Unexpected end of JSON input" khi máy chủ trả về phản hồi rỗng',
+      'Sửa lỗi 401 sau đăng nhập trên web (cookie same-origin qua proxy)',
+      'Nâng cấp giao diện đăng nhập Bác sĩ / Bệnh nhân',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -38,7 +39,7 @@ if (fs.existsSync(apkSrc)) {
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
   try {
-    execSync(`git commit -m "Release v${versionObj.latestVersion}: Security fix biometric bypass"`, { stdio: 'inherit' });
+    execSync(`git commit -m "Release v${versionObj.latestVersion}: Fix API login and JSON handling" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"`, { stdio: 'inherit' });
   } catch (e) {
     console.log('Nothing new to commit or already committed.');
   }
