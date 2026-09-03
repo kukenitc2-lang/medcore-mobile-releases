@@ -1,17 +1,18 @@
 {
-  "latestVersion": "0.0.0.118",
+  "latestVersion": "0.0.0.119",
   "minRequiredVersion": "0.0.0.1",
-  "buildNumber": 118,
+  "buildNumber": 119,
   "releaseDate": "2026-09-03",
   "releaseNotes": [
-    "[UI] Bản cập nhật v0.0.0.118: Tinh chỉnh giao diện màn hình chính",
-    "Bỏ header \"Ca trực hôm nay\" trên thẻ tổng quan của bác sĩ",
-    "Thẻ tổng quan chuyển nền trắng, chữ màu tối dễ đọc hơn",
-    "Bỏ hiển thị chuỗi chứng thư VNPT giả lập trong app"
+    "[SmartCA] Bản cập nhật v0.0.0.119: Ký số từ xa SmartCA theo đúng chuẩn server",
+    "Flow ký: sign-data → remote-sign (server điều phối SmartCA) → sign-conclusion",
+    "Fail-closed: không còn giả lập kết quả ký khi có lỗi",
+    "Ký hàng loạt đúng contract bulk-signatures của máy chủ",
+    "Yêu cầu backend hỗ trợ /signing/remote-sign và bác sĩ đăng ký chứng thư cá nhân"
   ],
   "downloadUrl": "https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk",
-  "apkSha256": "3AFE4973CB7826BEB2041277492646AC0D711197FE540993127060D0ED59972F",
-  "fileSize": "32.2 MB",
+  "apkSha256": "5E197B5D9F218045633F84FBE4F76EF80578062729E0CFA0D769BFD371C77F71",
+  "fileSize": "36.7 MB",
   "isMandatory": false,
   "forceUpdate": false
 }

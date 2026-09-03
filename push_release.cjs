@@ -15,15 +15,16 @@ if (fs.existsSync(apkSrc)) {
   console.log('Size:', sizeMb, 'MB');
 
   const versionObj = {
-    latestVersion: '0.0.0.118',
+    latestVersion: '0.0.0.119',
     minRequiredVersion: '0.0.0.1',
-    buildNumber: 118,
+    buildNumber: 119,
     releaseDate: new Date().toISOString().split('T')[0],
     releaseNotes: [
-      '[UI] Bản cập nhật v0.0.0.118: Tinh chỉnh giao diện màn hình chính',
-      'Bỏ header "Ca trực hôm nay" trên thẻ tổng quan của bác sĩ',
-      'Thẻ tổng quan chuyển nền trắng, chữ màu tối dễ đọc hơn',
-      'Bỏ hiển thị chuỗi chứng thư VNPT giả lập trong app',
+      '[SmartCA] Bản cập nhật v0.0.0.119: Ký số từ xa SmartCA theo đúng chuẩn server',
+      'Flow ký: sign-data → remote-sign (server điều phối SmartCA) → sign-conclusion',
+      'Fail-closed: không còn giả lập kết quả ký khi có lỗi',
+      'Ký hàng loạt đúng contract bulk-signatures của máy chủ',
+      'Yêu cầu backend hỗ trợ /signing/remote-sign và bác sĩ đăng ký chứng thư cá nhân',
     ],
     downloadUrl: 'https://github.com/kukenitc2-lang/medcore-mobile-releases/raw/main/public/downloads/MedCore_Hospital.apk',
     apkSha256: hash,
@@ -39,7 +40,7 @@ if (fs.existsSync(apkSrc)) {
   console.log('Pushing to GitHub...');
   execSync('git add .', { stdio: 'inherit' });
   try {
-    execSync(`git commit -m "Release v${versionObj.latestVersion}: UI cleanup - remove shift header, white summary card, remove fake VNPT strings" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"`, { stdio: 'inherit' });
+    execSync(`git commit -m "Release v${versionObj.latestVersion}: SmartCA remote signing - server-orchestrated flow, fail-closed" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"`, { stdio: 'inherit' });
   } catch (e) {
     console.log('Nothing new to commit or already committed.');
   }
